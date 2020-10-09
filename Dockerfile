@@ -4,7 +4,7 @@ MAINTAINER Stephen Bunn "scbunn@sbunn.org"
 COPY docker-entrypoint.sh /
 RUN apk update &&\
     apk add --no-cache su-exec &&\
-    apk add --no-cache squid=3.5.23-r2 && \
+    apk add --no-cache squid=3.5.27-r0 && \
     mkdir -p /var/cache/squid &&\
     chmod +x /docker-entrypoint.sh
 COPY conf/squid.conf /etc/squid/squid.conf
