@@ -2,7 +2,7 @@
 Squid in a docker container.  This container is based on Alpine to keep the image size as small as possible.  Out of the box squid is configured to proxy/cache HTTP/S traffic.  If you just need a simple proxy then you only need to add a user who is allowed to use the proxy, but most real world situations will require some more modifications to the out of the box configuration.
 
 ## Add a user 
-//If necessary run ```sudo apt-get install apache2-utils``` afterwards you can use
+If necessary run ```sudo apt-get install apache2-utils``` afterwards you can use
 ```
 htpasswd -c /conf/passwords FIRST_USR #create file
 htpasswd /conf/passwords SECOND_USER  #append users
